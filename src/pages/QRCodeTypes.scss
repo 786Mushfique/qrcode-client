@@ -1,0 +1,183 @@
+// .qr-code-types {
+//     text-align: center;
+//     padding: 2rem;
+//     background: #f5f6fa;
+  
+//     h2 {
+//       font-size: 2.5rem;
+//       margin-bottom: 0.5rem;
+//       color: #333;
+//     }
+  
+//     p {
+//       color: #666;
+//       margin-bottom: 2rem;
+//     }
+  
+//     .qr-grid {
+//       display: grid;
+//       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//       gap: 2rem;
+//       justify-items: center;
+//     }
+  
+//     .qr-card {
+//       background: #fff;
+//       border-radius: 1rem;
+//       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+//       padding: 2rem;
+//       text-align: center;
+//       position: relative;
+//       transition: transform 0.3s ease;
+  
+//       &:hover {
+//         transform: translateY(-10px);
+//       }
+  
+//       .qr-icon {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin-bottom: 1rem;
+  
+//         .icon-circle {
+//           width: 60px;
+//           height: 60px;
+//           border-radius: 50%;
+//           background: linear-gradient(135deg, #7b5aff, #623cea);
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           border: 3px solid white;
+//           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+//         }
+//       }
+  
+//       h3 {
+//         text-transform: capitalize;
+//         margin-bottom: 0.5rem;
+//         color: #333;
+//       }
+  
+//       .choose-btn {
+//         background: linear-gradient(135deg, #7b5aff, #623cea);
+//         border: none;
+//         padding: 0.8rem 1.5rem;
+//         color: #fff;
+//         border-radius: 0.5rem;
+//         cursor: pointer;
+//         transition: background 0.3s ease;
+  
+//         &:hover {
+//           background: linear-gradient(135deg, #623cea, #7b5aff);
+//         }
+//       }
+//     }
+//   }
+  
+
+.qr-code-types {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    min-height: 100vh;
+  
+    h2 {
+      font-size: 2.5rem;
+      color: #623cea;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 3rem;
+    }
+  
+    .qr-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+      padding: 0 2rem;
+    }
+  
+    .qr-card {
+      width: 300px;
+      height: 400px;
+      background: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      cursor: pointer;
+  
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+  
+      h3 {
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        color: #623cea;
+        text-transform: capitalize;
+      }
+  
+      p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: #777;
+      }
+  
+      .qr-icon {
+        margin-bottom: 1.5rem;
+  
+        .icon-circle {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background: rgba(98, 60, 234, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          transition: background 0.3s ease-in-out;
+  
+          svg {
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+      }
+  
+      &:hover .qr-icon .icon-circle {
+        background: rgba(98, 60, 234, 0.2);
+  
+        svg {
+          transform: scale(1.2);
+        }
+      }
+  
+      .choose-btn {
+        background: #623cea;
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        border-radius: 25px;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+  
+        &:hover {
+          background: #5129c7;
+        }
+      }
+    }
+  }
+  
+  

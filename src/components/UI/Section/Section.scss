@@ -1,0 +1,21 @@
+.section {
+
+
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb); // Modern Soft Background
+  transition: background 0.4s ease-in-out;
+  &__inner {
+    padding-top: 7.5rem;
+    
+  }
+
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  &__history {
+    font-size: 12px !important;
+  }
+
+  &__title {
+  }
+}

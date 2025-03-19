@@ -1,0 +1,91 @@
+.trusted-companies {
+    position: relative;
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+  
+    .background-effects {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+  
+      .effect-top, .effect-bottom {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(to right, #e3eaf2, #f8f9fa);
+      }
+  
+      .effect-top {
+        top: 0;
+      }
+  
+      .effect-bottom {
+        bottom: 0;
+      }
+    }
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+  
+      .header {
+        margin-bottom: 2rem;
+  
+        .section-title {
+          font-size: 2rem;
+          font-weight: 700;
+          color: #333;
+        }
+  
+        .section-description {
+          font-size: 1rem;
+          color: #555;
+        }
+      }
+  
+      .logos-wrapper {
+        overflow: hidden;
+        white-space: nowrap;
+  
+        .logos-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          flex-wrap: nowrap;
+          animation: scroll 10s linear infinite;
+  
+          .logo-card {
+            flex-shrink: 0;
+  
+            .logo-image {
+              max-width: 150px;
+              height: auto;
+              filter: grayscale(100%);
+              transition: filter 0.3s ease-in-out;
+  
+              &:hover {
+                filter: grayscale(0%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  
+  

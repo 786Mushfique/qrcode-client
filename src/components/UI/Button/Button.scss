@@ -1,0 +1,106 @@
+.button {
+  font-family: var(--text-family-medium);
+  font-size: 0.875rem;
+  background: transparent;
+  color: var(--text-color-opacity);
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: var(--radius-medium);
+
+  &_blue {
+    background: var(--color-primary);
+    color: #fff;
+
+    &:hover {
+      background: var(--color-primary-hover);
+    }
+
+    &:active {
+      background: var(--color-primary-active);
+    }
+  }
+
+  &_secondary {
+    background: var(--color-grey);
+    color: var(--text-color-primary);
+
+    &:hover {
+      background: rgba(226, 233, 237, 0.75);
+    }
+
+    &:active {
+      background: rgba(226, 233, 237, 0.75);
+    }
+  }
+
+  &_white {
+    border: 1px solid var(--color-border);
+    color: var(--text-color-primary);
+    background: #fff;
+  }
+
+  &_red {
+    background: #fff5f6;
+    color: var(--color-red);
+
+    &:hover {
+      background: #fff0f1;
+    }
+  }
+
+  &_transparent {
+    color: var(--color-primary);
+
+    &:hover {
+      color: var(--color-primary-hover);
+    }
+
+    &:active {
+      color: var(--color-primary-active);
+    }
+  }
+
+  &_disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  /* &_transparent {
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:active {
+      background: transparent;
+    }
+  } */
+
+  &_default {
+    padding: 0.625rem 1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #6C63FF, #4A47A3);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.4);
+  }
+  
+  &_default:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #4A47A3, #6C63FF);
+    box-shadow: 0 6px 15px rgba(108, 99, 255, 0.6);
+  }
+  
+  &_default:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(108, 99, 255, 0.3);
+  }
+  
+}
